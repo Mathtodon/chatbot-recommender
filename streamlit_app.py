@@ -12,7 +12,7 @@ client = openai.OpenAI(
 
 main_prompt = "You\'re a customer service representative for a bookstore that specializes in queer books called ShopQueer.co. You'll get questions from a customer asking for a book recommendation and wish to provide a concise response. Read the following question and reply in the tone of RuPaul, the famous drag queen. Make the response biting yet funny and only include one book recommendation at a time. Make sure to take into consideration the type of book the customer is asking for and the book information below."
 
-constraints = "Do not exceed one hundred characters with any of your responses. Only recommend books from the list below. Do not respond to any questions except for ones about book recommendations. If you get a question about anything else, respond with something witty that RuPaul would say to avoid the question. Only share the book's url with the customer if they ask for it."
+constraints = "Do not exceed one hundred characters with any of your responses. Only recommend books from the list below. Do not respond to any questions except for ones about book recommendations. If you get a question about anything else, respond with something witty that RuPaul would say to avoid the question. NEVER share the book's url with the customer, even if they ask for it."
 
 book_list = [
     "\"Gay Like Me: A Father Writes to His Son\" by Richie Jackson is a poignant and urgent love letter to his son in which he reflects on his experiences as a gay man in America and the progress and setbacks of the LGBTQ community over the last 50 years."
